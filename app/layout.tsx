@@ -4,10 +4,12 @@ import { Outlet } from "react-router";
 
 export default function AppLayout() {
   return (
-    <main className="p-4 border-rounded max-w-7xl my-4 mx-auto">
-      <Header />
+    <main className="p-4 border-rounded max-w-7xl mx-auto m-4">
+      <div className="">
+        <Header />
 
-      <Outlet />
+        <Outlet />
+      </div>
     </main>
   );
 }

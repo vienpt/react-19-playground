@@ -28,6 +28,19 @@ export default function Home() {
           ⟶ {pageHome.sectionFetchPromise.tryItFetchPromise}
         </NavLink>
       </Section>
+      <Section
+        elId="react-use-action-form"
+        docLink="https://react.dev/reference/react/useActionState"
+        title={pageHome.sectionActionState.title}
+      >
+        <NavLink
+          to={"/action-state"}
+          replace
+          className="hover:animate-bounce inline-block"
+        >
+          ⟶ {pageHome.sectionActionState.goToFormAction}
+        </NavLink>
+      </Section>
     </div>
   );
 }

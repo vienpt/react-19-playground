@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import RandomContainer from "~/features/random/random-container";
 import type { Route } from "./+types/fetch-promise";
-import { pageFetchPromise } from "~/lang/en-US.json";
+import { pageFetchPromise, common } from "~/lang/en-US.json";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -17,8 +17,8 @@ export default function FetchPromise() {
   return (
     <>
       <RandomContainer />
-      <NavLink to={"/"} className="font-bold text-blue-400">
-        {pageFetchPromise.backHome}
+      <NavLink to={"/"} className="font-bold text-blue-400 underline">
+        {common.backHome}
       </NavLink>
     </>
   );

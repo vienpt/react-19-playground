@@ -11,9 +11,7 @@ export default function Random({
 
   return (
     <div className="p-4">
-      <pre className="bg-zinc-300 p-1 rounded overflow-auto text-lg">
-        {data}
-      </pre>
+      <pre className="p-1 rounded overflow-auto text-lg">{data}</pre>
     </div>
   );
 }

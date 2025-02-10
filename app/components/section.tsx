@@ -17,7 +17,7 @@ export default function Section({
     <section id={elId}>
       <div className="p-5 border-rounded flex flex-col">
         <a
-          className="font-semibold text-blue-700"
+          className="font-semibold text-blue-400 hover:underline"
           href={docLink}
           rel="noopener noreferrer"
         >
