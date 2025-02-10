@@ -1,0 +1,6 @@
+{
+  "pageFetchPromise": {
+    "backHome": "Back Home",
+    "fetchingRandom": "Fetching random"
+  }
+}
