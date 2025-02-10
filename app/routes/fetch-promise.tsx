@@ -5,11 +5,10 @@ import { pageFetchPromise } from "~/lang/en-US.json";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "React 19 + Fetch promise" },
+    { title: pageFetchPromise.metadata.title },
     {
       name: "description",
-      content:
-        "Fetch promise data by passing Promise as a prop from Server component to Client component",
+      content: pageFetchPromise.metadata.description,
     },
   ];
 }

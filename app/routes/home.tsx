@@ -1,30 +1,31 @@
 import { NavLink } from "react-router";
 import type { Route } from "./+types/home";
 import Section from "~/components/section";
+import { pageHome } from "~/lang/en-US.json";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "React 19 + React Router v7" },
-    { name: "description", content: "Welcome to React 19" },
+    { title: pageHome.metadata.title },
+    { name: "description", content: pageHome.metadata.description },
   ];
 }
 
 export default function Home() {
   return (
     <div className="grid gap-10">
-      <h3>Hello, How are you doing?</h3>
+      <h3>{pageHome.sayHello}</h3>
 
       <Section
         elId="react-use-api"
         docLink="https://react.dev/reference/react/use#"
-        title="You are in section react use API"
+        title={pageHome.sectionFetchPromise.title}
       >
         <NavLink
           to={"/fetch-promise"}
           replace
           className="hover:animate-bounce inline-block"
         >
-          ⟶ Try it Fetch promise
+          ⟶ {pageHome.sectionFetchPromise.tryItFetchPromise}
         </NavLink>
       </Section>
     </div>

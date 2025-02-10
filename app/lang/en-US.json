@@ -1,6 +1,21 @@
 {
+  "pageHome": {
+    "sayHello": "Hello, How are you doing?",
+    "sectionFetchPromise": {
+      "title": "You are in section react use API",
+      "tryItFetchPromise": "Try it Fetch promise"
+    },
+    "metadata": {
+      "title": "React 19 + React Router v7",
+      "description": "Welcome to React 19"
+    }
+  },
   "pageFetchPromise": {
     "backHome": "Back Home",
-    "fetchingRandom": "Fetching random"
+    "fetchingRandom": "Fetching random",
+    "metadata": {
+      "title": "React 19 + Fetch promise",
+      "description": "Fetch promise data by passing Promise as a prop from Server component to Client component"
+    }
   }
 }
